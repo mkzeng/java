@@ -1,0 +1,33 @@
+package com.zhcpt.text;
+import javax.swing.JFrame;
+import java.awt.FlowLayout;
+/**
+ * @author roy曾美开
+ */
+public class LoginDemo {
+	/**
+	 * @param 方法注释
+	 */
+	public static void main(String[] args) {
+		// TODO 登陆界面
+		javax.swing.JFrame frame = new javax.swing.JFrame();
+		frame.setTitle("登录");//设置可见性
+		frame.setSize(290,200);//设置窗口大小长宽
+		frame.setDefaultCloseOperation(3);//设置用户在此窗口上发起"close"时默认执行操作，参数3代表close时退出应用
+		frame.setLocationRelativeTo(null);//使窗口居中
+		java.awt.FlowLayout fl = new java.awt.FlowLayout(FlowLayout.CENTER);//创建流布局对象，默认是居中对齐
+		frame.setLayout(fl);//布置fl流布局对象
+		javax.swing.JLabel labName= new javax.swing.JLabel("账号：");//创建标签对象
+		frame.add(labName);
+		javax.swing.JTextField textName = new javax.swing.JTextField(20);//创建文本框对象
+		frame.add(textName);
+		javax.swing.JLabel labName2= new javax.swing.JLabel("密码：");
+		frame.add(labName2);
+		javax.swing.JPasswordField pwName = new javax.swing.JPasswordField(20);//创建密码框对象
+		frame.add(pwName);
+		javax.swing.JButton bName = new javax.swing.JButton("登录！");//创建按钮的对象
+		frame.add(bName);
+		frame.setVisible(true);//设置可见性
+		frame.setResizable(false);//使其无法调整窗口大小
+	}
+	}
